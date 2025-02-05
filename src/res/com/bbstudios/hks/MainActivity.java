@@ -68,7 +68,7 @@ import java.util.Locale;
 
 import org.json.JSONArray;
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback {
-final String my_api="PjbmJnlTsz86XX1x6otzTNpUgP59msB85tfPhRmc";
+final String my_api="#";
     String dat1="",dat2="",isspoisk="36086";
     String[] camlist = {"FHAZ", "RHAZ", "MAST", "CHEMCAM","MAHLI","MARDI","NAVCAM","PANCAM","MINITES","Ählisi"};
     BottomSheetDialog bottomSheetDialog2,bottomSheetDialog1,marsdialog;
@@ -90,7 +90,7 @@ final String my_api="PjbmJnlTsz86XX1x6otzTNpUgP59msB85tfPhRmc";
     List<sanawucin> amallar;
     WebView webweb;
     TextView title,addinfo;
-    String n2yoapi="NVBPH8-TY37AF-QNKABL-5EX9";
+    String n2yoapi="NVBPH8!!!";
     EditText sany;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
