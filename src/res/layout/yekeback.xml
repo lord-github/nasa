@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Заголовок"
+        android:fontFamily="serif"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/expandButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/expandButton" />
+
+    <!-- Кнопка раскрытия -->
+    <ImageView
+        android:id="@+id/expandButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="10dp"
+        android:src="@android:drawable/arrow_down_float"
+        android:contentDescription="Expand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/titleTextView"
+        app:layout_constraintBottom_toBottomOf="@id/titleTextView" />
+
+    <!-- Скрываемая часть -->
+    <LinearLayout
+        android:id="@+id/expandableLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView">
+
+        <TextView
+            android:id="@+id/detailsTextView"
+            android:layout_width="wrap_content"
+            android:fontFamily="serif"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="Дополнительная информация"
+            android:textSize="14sp" />
+        <Button
+            android:layout_gravity="right"
+            android:fontFamily="@font/bruno_ace"
+            android:layout_width="120dp"
+            android:id="@+id/barlamak"
+            android:textSize="11dp"
+            android:layout_height="wrap_content"
+            android:text="Barlamak"/>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

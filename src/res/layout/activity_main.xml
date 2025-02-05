@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/main2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <ImageView
+            android:src="@drawable/favicon_192"
+            android:layout_width="55dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="125dp"
+            android:id="@+id/nasalogo"
+            android:layout_alignParentRight="true"
+            android:layout_height="55dp"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/nasalogo"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:fontFamily="@font/bruno_ace"
+            android:text=" Data center" />
+    </RelativeLayout>
+<TextView
+    android:textColor="#FFC107"
+    android:fontFamily="@font/bruno_ace"
+    android:textSize="18dp"
+    android:layout_margin="5dp"
+    android:id="@+id/amalyazgy"
+    android:layout_below="@id/main2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Hödürlenýän amallar"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/sanaw2"
+        android:layout_below="@id/amalyazgy"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"/>
+<ImageView
+        android:layout_below="@id/sanaw2"
+    android:layout_width="50dp"
+    android:id="@+id/mks"
+    android:onClick="who"
+    android:layout_marginTop="25dp"
+    android:layout_centerHorizontal="true"
+    android:layout_height="50dp"
+    android:layout_marginBottom="25dp"
+    android:src="@drawable/iss"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/mks"
+    android:layout_centerHorizontal="true"
+    android:textColor="@color/white"
+    android:gravity="center"
+    android:fontFamily="@font/bruno_ace"
+    android:text="Halkara kosmiki stansiýasy\n©Aşgabat 2025"/>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

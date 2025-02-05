@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="250dp"
+        app:cardCornerRadius="11dp"
+        android:layout_centerInParent="true"
+        android:layout_height="90dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#06183C"
+            android:layout_height="match_parent">
+            <EditText
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:textSize="12dp"
+                android:fontFamily="@font/bruno_ace"
+                android:text="NVBPH8-TY37AF-QNKABL-5EX9"
+                android:id="@+id/myneoid"
+                android:layout_centerHorizontal="true"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/butapi"
+                android:layout_below="@id/myneoid"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ok"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

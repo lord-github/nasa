@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/kartad"
+    android:background="@drawable/round_top"
+    android:layout_width="match_parent"
+    android:layout_height="605dp">
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textSize="18dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/bruno_ace"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stanisýanyň ýerleşişi"/>
+    <TextView
+        android:textColor="@color/white"
+        android:fontFamily="serif"
+        android:layout_width="wrap_content"
+        android:id="@+id/addinfo"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text=""/>
+    <fragment
+        android:layout_marginTop="25dp"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
